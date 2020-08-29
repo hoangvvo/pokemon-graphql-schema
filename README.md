@@ -1,17 +1,11 @@
 # pokemon-graphql-schema
 
-This packages export `typeDefs` and `resolvers`, which can be used to create a GraphQL execution schema that queries Pokémon data from PokéAPI v2.
+This packages export `GraphQLSchema`, which can be used to create a GraphQL service that queries Pokémon data from PokéAPI v2.
 
 ## Usage
 
 ```js
-const { makeExecutableSchema } = require('@graphql-tools/schema');
-const { typeDefs, resolvers } = require('pokemon-graphql-schema');
-
-const schema = makeExecutableSchema({
-  typeDefs,
-  resolvers,
-});
+const schema = require('pokemon-graphql-schema');
 ```
 
 ### Fetch polyfill

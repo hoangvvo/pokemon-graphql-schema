@@ -5,5 +5,11 @@
   "main": "index.js",
   "repository": "git@github.com:hoangvvo/pokemon-graphql-schema.git",
   "author": "Hoang Vo <40987398+hoangvvo@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "graphql": "^15.3.0"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^6.1.0"
+  }
 }
