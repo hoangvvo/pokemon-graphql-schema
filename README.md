@@ -28,9 +28,13 @@ const { schema } = require("pokemon-graphql-schema");
 In `node`, you must polyfill `fetch` using [node-fetch](https://github.com/node-fetch/node-fetch):
 
 ```js
-const fetch = require('node-fetch');
+const fetch = require("node-fetch");
 
 if (!globalThis.fetch) {
     globalThis.fetch = fetch;
 }
 ```
+
+## License
+
+[MIT](LICENSE). Do whatever your heart desires!
