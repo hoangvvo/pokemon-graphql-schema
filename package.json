@@ -13,6 +13,7 @@
     "import": "./dist/index.js",
     "require": "./dist/index-cjs.js"
   },
+  "files": ["dist"],
   "repository": "git@github.com:hoangvvo/pokemon-graphql-schema.git",
   "author": "Hoang Vo <40987398+hoangvvo@users.noreply.github.com>",
   "license": "MIT",
