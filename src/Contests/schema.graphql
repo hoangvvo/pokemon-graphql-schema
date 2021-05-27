@@ -1,0 +1,39 @@
+type Query {
+  contest_type(id: ID!): ContestType
+  contest_effect(id: ID!): ContestEffect
+  super_contest_effect(id: ID!): SuperContestEffect
+}
+
+type ContestType {
+  id: ID!
+  name: String
+  berry_flavor: NamedAPIResource
+  names: [ContestName!]
+}
+
+type ContestName {
+  name: String
+  color: String
+  language: NamedAPIResource
+}
+
+type ContestName {
+  name: String
+  color: String
+  language: NamedAPIResource
+}
+
+type ContestEffect {
+  id: ID!
+  appeal: Int
+  jam: Int
+  effect_entries: [Effect!]
+  flavor_text_entries: [FlavorText!]
+}
+
+type SuperContestEffect {
+  id: ID!
+  appeal: Int
+  flavor_text_entries: [FlavorText!]
+  moves: [NamedAPIResource!]
+}

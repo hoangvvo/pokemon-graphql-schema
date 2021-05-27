@@ -1,0 +1,72 @@
+type Query {
+  pokemon(id: ID!): Pokemon
+}
+
+type Pokemon {
+  id: ID!
+  name: String!
+  base_experience: Int
+  height: Int
+  is_default: Boolean
+  order: Int
+  weight: Int
+  abilities: [PokemonAbility!]
+  forms: [NamedAPIResource!]
+  game_indices: [VersionGameIndex!]
+  held_items: [PokemonHeldItem!]
+  location_area_encouters: String
+  moves: [PokemonMove!]
+  sprites: PokemonSprites
+  species: NamedAPIResource
+  stats: [PokemonStat!]
+  types: [PokemonType!]
+}
+
+type PokemonAbility {
+  is_hidden: Boolean
+  slot: Int
+  ability: NamedAPIResource
+}
+
+type PokemonType {
+  slot: Int
+  type: NamedAPIResource
+}
+
+type PokemonHeldItem {
+  item: NamedAPIResource
+  version_details: PokemonHeldItemVersion
+}
+
+type PokemonHeldItemVersion {
+  version: NamedAPIResource
+  rarity: Int
+}
+
+type PokemonMove {
+  move: NamedAPIResource
+  version_group_details: PokemonMoveVersion
+}
+
+type PokemonMoveVersion {
+  move_learn_method: NamedAPIResource
+  version_group: NamedAPIResource
+  level_learned_at: Int
+}
+
+type PokemonStat {
+  stat: NamedAPIResource
+  effort: Int
+  base_stat: Int
+}
+
+type PokemonSprites {
+  front_default: String
+  front_shiny: String
+  front_female: String
+  front_shiny_female: String
+  back_default: String
+  back_shiny: String
+  back_female: String
+  back_shiny_female: String
+}

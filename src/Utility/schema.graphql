@@ -1,0 +1,47 @@
+type Query {
+  language(id: ID!): Language
+}
+
+type Language {
+  id: ID!
+  name: String
+  official: Boolean
+  iso639: String
+  iso3166: String
+  names: [Name!]
+}
+
+type APIResource {
+  url: String!
+}
+
+type Description {
+  description: String!
+  language: NamedAPIResource
+}
+
+type Effect {
+  effect: String!
+  language: NamedAPIResource
+}
+
+type FlavorText {
+  flavor_text: String
+  language: NamedAPIResource
+  version: NamedAPIResource
+}
+
+type Name {
+  name: String!
+  language: NamedAPIResource
+}
+
+type NamedAPIResource {
+  name: String!
+  url: String!
+}
+
+type VersionGameIndex {
+  game_index: Int!
+  version: NamedAPIResource
+}
