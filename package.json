@@ -13,6 +13,7 @@
     "import": "./dist/index.js",
     "require": "./dist/index-cjs.js"
   },
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -28,7 +29,7 @@
   },
   "scripts": {
     "format": "npx prettier --write ./src",
-    "build": "rollup -c"
+    "build": "rollup -c && cp src/index.d.ts dist"
   },
   "devDependencies": {
     "@rollup/plugin-graphql": "^1.0.0",
