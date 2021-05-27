@@ -1,6 +1,6 @@
 {
   "name": "pokemon-graphql-schema",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "description": "Exports of typeDefs and resolvers of PokéAPI GraphQL service to be used with graphql-tools",
   "keywords": [
