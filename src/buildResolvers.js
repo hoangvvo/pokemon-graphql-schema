@@ -10,7 +10,7 @@ export const buildResolvers = (obj) => {
   for (const [query, endpoint] of Object.entries(obj)) {
     Query[query] = (_, { id }) => {
       return fetch(`${BASE_URL}/${endpoint}/${id}`).then((res) =>
-        res.ok ? res.json : null
+        res.ok ? res.json() : null
       );
     };
   }
