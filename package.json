@@ -24,16 +24,16 @@
     "graphql": "^15.3.0"
   },
   "dependencies": {
-    "@graphql-tools/merge": "^6.2.14",
-    "@graphql-tools/schema": "^6.1.0"
+    "@graphql-tools/merge": "^8.3.3",
+    "@graphql-tools/schema": "^9.0.1"
   },
   "scripts": {
     "format": "npx prettier --write ./src",
     "build": "rollup -c && cp src/index.d.ts dist"
   },
   "devDependencies": {
-    "@rollup/plugin-graphql": "^1.0.0",
-    "prettier": "^2.3.0",
-    "rollup": "^2.50.2"
+    "@rollup/plugin-graphql": "^1.1.0",
+    "prettier": "^2.7.1",
+    "rollup": "^2.77.3"
   }
 }
