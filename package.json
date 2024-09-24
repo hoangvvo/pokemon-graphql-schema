@@ -32,8 +32,8 @@
     "build": "rollup -c && cp src/index.d.ts dist"
   },
   "devDependencies": {
-    "@rollup/plugin-graphql": "^1.1.0",
+    "@rollup/plugin-graphql": "^2.0.5",
     "prettier": "^2.7.1",
-    "rollup": "^2.77.3"
+    "rollup": "^4.22.4"
   }
 }
